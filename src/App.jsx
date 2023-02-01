@@ -1,4 +1,5 @@
-import reactLogo from './assets/react.svg'
+import logo from './assets/react.svg'
+import LogoJS from './assets/javascript.svg'
 import './App.css'
 import Form from './components/Form'
 import NovaTarefa from './components/NovaTarefa'
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <img src={reactLogo} width="120px" />
+        <img src={LogoJS} width="120px" />
       </div>
       <h2>Primeiro Projeto React com Vite</h2>
       <Form/>
