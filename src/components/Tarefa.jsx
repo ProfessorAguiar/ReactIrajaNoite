@@ -1,9 +1,9 @@
-function Tarefa({titulo}) {
+function Tarefa({ titulo }) {
   return (
-    <>
-    <label htmlFor="tituloT">{titulo} :</label>
-    <input type="checkbox" id="tituloT"/>
-    </>
+    <div>
+      <label htmlFor={titulo}>{titulo} :</label>
+      <input type="checkbox" id={titulo} />
+    </div>
   )
 }
 export default Tarefa

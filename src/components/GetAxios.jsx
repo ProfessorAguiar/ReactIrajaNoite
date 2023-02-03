@@ -1,18 +1,22 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Tarefa from "./Tarefa";
 function GetAxios() {
-  const [tarefas, setTarefas]=useState('')
+  const [tarefas, setTarefas] = useState([])
+  useEffect(() => {
     axios
-    .get('https://servidordenotas-5hrw.onrender.com/notas')
-    .then((response)=>{
-      console.log(response.data[0].titulo)
-      setTarefas(response.data[0].titulo)
-    })
-    .catch((error)=>{console.error(error)})
+      .get('https://servidordenotas-5hrw.onrender.com/notas')
+      .then((response) => {
+        console.log(response.data[0].titulo)
+        setTarefas(response.data)
+      })
+      .catch((error) => { console.error(error) })
+  }, [])
   return (
     <div>
-      <Tarefa titulo={tarefas}/>
+      {tarefas.map((element, key) => (
+        <Tarefa titulo={element.titulo} key={key} />
+      ))}
     </div>
   )
 }
