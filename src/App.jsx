@@ -15,7 +15,7 @@ function App() {
       <Form />
       <br />
       <NovaTarefa />
-      {/* <GetAxios /> */}
+      <GetAxios />
       {/* <BotaoUseEffect/> */}
     </div>
   )

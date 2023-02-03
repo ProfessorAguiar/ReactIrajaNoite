@@ -1,8 +1,8 @@
-function Tarefa({ titulo }) {
+function Tarefa({ tituloTarefa }) {
   return (
     <div>
-      <label htmlFor={titulo}>{titulo} :</label>
-      <input type="checkbox" id={titulo} />
+      <label htmlFor={tituloTarefa}>{tituloTarefa} :</label>
+      <input type="checkbox" id={tituloTarefa} />
     </div>
   )
 }

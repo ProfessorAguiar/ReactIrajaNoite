@@ -15,7 +15,7 @@ function GetAxios() {
   return (
     <div>
       {tarefas.map((element, key) => (
-        <Tarefa titulo={element.titulo} key={key} />
+        <Tarefa tituloTarefa={element.titulo} key={key} />
       ))}
     </div>
   )
