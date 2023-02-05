@@ -1,0 +1,15 @@
+.barra{
+  position: relative;
+  width: 100%;
+  margin:0px;
+}
+.links{
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 27px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.links:hover{
+  color: rgb(241, 199, 91);
+}
