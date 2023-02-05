@@ -14,8 +14,8 @@ function PutAxios() {
           .catch((error) => { console.log(error) })
       }
     return (
-        <div>
-            <h3>Alterar Tarefa</h3>
+        <div style={{marginTop:30, marginBottom:30}}>
+            <div>Alterar Tarefa: </div>
             <label>id: </label>
             <input type="number" id="idPut" onChange={()=>(
                 setIdPut(document.getElementById('idPut').value)
@@ -24,7 +24,7 @@ function PutAxios() {
             <input type="text" id="tituloPut" onChange={()=>(
                 setTituloPut(document.getElementById('tituloPut').value)
     )}/>
-            <button onClick={()=>AlterarNota()}>Alterar</button>
+            <button onClick={()=>AlterarNota()} style={{margin:10, borderRadius:10, padding:4, backgroundColor:"#1e82f5", fontWeight:'bold', color:'#FFFFFF', fontSize:13}}>Alterar</button>
         </div>
     )
 }

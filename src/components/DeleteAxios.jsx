@@ -9,13 +9,13 @@ function DeleteAxios() {
           .catch((error) => { console.log(error) })
       }
     return (
-        <div>
-            <h3>Deletar Tarefa</h3>
+        <div style={{marginTop:30, marginBottom:30}}>
+            <div>Deletar Tarefa: </div>
             <label>id: </label>
             <input type="number" id="idDelete" onChange={()=>(
                 setIdDelete(document.getElementById('idDelete').value)
     )}/>
-            <button onClick={()=>DeletarNota()}>Deletar</button>
+            <button onClick={()=>DeletarNota()} style={{margin:10, borderRadius:10, padding:4, backgroundColor:"#1e82f5", fontWeight:'bold', color:'#FFFFFF', fontSize:13}}>Deletar</button>
         </div>
     )
 }
