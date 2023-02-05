@@ -16,8 +16,10 @@ function GetAxios() {
   return (
     <div>
       <button onClick={()=>setRef(ref+1)}>Atualizar</button>
-      {tarefas.map((element, key) => (
-        <Tarefa tituloTarefa={element.titulo} key={key} />
+      {tarefas.map((element) => (
+        <>
+        <Tarefa idTarefa={element.id} tituloTarefa={element.titulo} key={element.id} />
+      </>
       ))}
     </div>
   )
