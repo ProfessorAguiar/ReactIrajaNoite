@@ -1,0 +1,9 @@
+.links{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.links:hover{
+    color:#dcf901;
+}
