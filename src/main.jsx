@@ -8,6 +8,7 @@ import {
 // import './index.css'
 import ErrorPage from './pages/ErrorPage';
 import GetAxios from './components/GetAxios';
+import Contato from './pages/Contato';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contato",
-        element: <h3>Página de Contato</h3>,
+        element:<Contato/>,
       },
       {
         path: "/tarefas",
