@@ -4,13 +4,14 @@ import App from './App'
 import {
   createBrowserRouter,
   RouterProvider,
+  createHashRouter,
 } from "react-router-dom";
 // import './index.css'
 import ErrorPage from './pages/ErrorPage';
 import GetAxios from './components/GetAxios';
 import Contato from './pages/Contato';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
